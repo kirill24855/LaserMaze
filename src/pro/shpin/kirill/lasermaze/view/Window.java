@@ -19,7 +19,6 @@ public class Window {
 	private long windowHandle;
 
 	// Textures
-	private int tex;
 
 	private int prevScore = -1;
 	private List<Integer> scoreDigits; // Global scope so that there isn't a need to re-calculate this list every time when it stays the same
@@ -45,7 +44,7 @@ public class Window {
 
 		// Texture init
 		glEnable(GL_TEXTURE_2D);
-		tex = GLUtil.loadTexture("/textures/bonusYellowPurple.png");
+		//tex = GLUtil.loadTexture("/textures/bonusYellowPurple.png");
 
 		firstRender = true;
 

@@ -15,8 +15,6 @@ public class Game {
 	public static final int FIELD_HEIGHT = 8;
 	private static final int MAX_SHOTS = 50;
 
-	private Sound sound;
-
 	private int width;
 	private int height;
 
@@ -55,8 +53,6 @@ public class Game {
 	public void init(Window window) {
 		width = window.width;
 		height = window.height;
-
-		sound = new Sound("/sounds/8BitTeleport.wav");
 
 		glfwSetCursorPosCallback(window.getHandle(), (windowHandle, posX, posY) -> {
 				mouseX = (int) posX;
